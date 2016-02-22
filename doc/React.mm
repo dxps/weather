@@ -48,13 +48,13 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="Concepts" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_1978433680" CREATED="1455993605517" MODIFIED="1456079646115" VSHIFT="-12">
+<node TEXT="Concepts" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="left" ID="ID_1978433680" CREATED="1455993605517" MODIFIED="1456079646115" VSHIFT="-12">
 <edge COLOR="#0000ff"/>
 <node TEXT="Downwards data flow." FOLDED="true" ID="ID_449301805" CREATED="1455993611694" MODIFIED="1455993619040">
 <node TEXT="Only the most parent component should&#xa;be responsible for fetching data." LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_1427612178" CREATED="1455993690963" MODIFIED="1456079506895"/>
 </node>
 </node>
-<node TEXT="Components" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_1166675210" CREATED="1455970314632" MODIFIED="1456079649645">
+<node TEXT="Components" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" FOLDED="true" POSITION="left" ID="ID_1166675210" CREATED="1455970314632" MODIFIED="1456079649645">
 <edge COLOR="#7272ff"/>
 <node TEXT="types" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1990008593" CREATED="1455970541186" MODIFIED="1456073498059">
 <node TEXT="functional components" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" FOLDED="true" ID="ID_952556977" CREATED="1455971914280" MODIFIED="1456073494925">
@@ -81,9 +81,11 @@
 <node TEXT="State" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_486474633" CREATED="1455972957428" MODIFIED="1455992672048" VSHIFT="24">
 <edge COLOR="#ff0000"/>
 <node TEXT="Mgmt in the class-based components" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1046145376" CREATED="1455973813227" MODIFIED="1456080043804">
-<node TEXT="initialized in the constructor" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" FOLDED="true" ID="ID_1072806630" CREATED="1455972970710" MODIFIED="1456080043803">
+<node TEXT="initialized in the constructor" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_1072806630" CREATED="1455972970710" MODIFIED="1456080043803">
 <node TEXT="ex:" FOLDED="true" ID="ID_931847184" CREATED="1455973041978" MODIFIED="1455973043308">
-<node TEXT="constructor(props) {&#xa;   super(props);&#xa;   this.state = { term: &apos;&apos; };&#xa;}" STYLE_REF="Monospace" ID="ID_697733219" CREATED="1455973043641" MODIFIED="1455991166249"/>
+<node TEXT="constructor(props) {&#xa;   super(props);&#xa;   this.state = { term: &apos;&apos; };&#xa;}" STYLE_REF="Monospace" ID="ID_697733219" CREATED="1455973043641" MODIFIED="1456174044246">
+<font NAME="Meslo LG S"/>
+</node>
 </node>
 </node>
 <node TEXT="updated using this.setState( { prop: value } );" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_330483772" CREATED="1455973863333" MODIFIED="1455993761333">
@@ -108,11 +110,22 @@
 <node TEXT="is a React component that has a direct connection&#xa;to the state managed by Redux" ID="ID_813299059" CREATED="1456073250453" MODIFIED="1456073339960"/>
 <node TEXT="also called a Smart Component in Redux docs" ID="ID_549961765" CREATED="1456073397907" MODIFIED="1456073441915"/>
 <node TEXT="should be the most parent component&#xa;that cares about a particular piece of state" ID="ID_917216113" CREATED="1456073662805" MODIFIED="1456073761203"/>
+<node TEXT="promotion from Component" ID="ID_1786628675" CREATED="1456173801650" MODIFIED="1456173811796">
+<node TEXT="ex:" FOLDED="true" ID="ID_1846811321" CREATED="1456174111049" MODIFIED="1456174113329">
+<node TEXT="import React, { Component } from &apos;react&apos;;&#xa;import { connect } from &apos;react-redux&apos;;&#xa;class BookList extends Component { ... }&#xa;function mapStateToProps(state) { ... }&#xa;export default connect(mapStateToProps)(BookList);" ID="ID_1168293883" CREATED="1456173812779" MODIFIED="1456174071931">
+<font NAME="Meslo LG S" SIZE="8"/>
+</node>
+</node>
+</node>
+<node TEXT="is (re)rendered everytime the state changes" ID="ID_816911119" CREATED="1456177544698" MODIFIED="1456177572639"/>
 </node>
 <node TEXT="Action Creator" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_433678534" CREATED="1456079424143" MODIFIED="1456079480106" VSHIFT="12">
 <node TEXT="is linked to an event" ID="ID_774051631" CREATED="1456079428131" MODIFIED="1456079460779"/>
-<node TEXT="it returns an action (object) that is sent to all reducers" ID="ID_26304608" CREATED="1456079461252" MODIFIED="1456080580521"/>
-<node TEXT="reducers may change the state based on these actions" ID="ID_1659201709" CREATED="1456079561366" MODIFIED="1456079581168"/>
+<node TEXT="it returns an action (object)&#xa;that is sent to all reducers" ID="ID_26304608" CREATED="1456079461252" MODIFIED="1456174338573">
+<node TEXT="reducers may change the state&#xa;based on these actions" ID="ID_1659201709" CREATED="1456079561366" MODIFIED="1456174346729">
+<font SIZE="8"/>
+</node>
+</node>
 </node>
 </node>
 </node>
