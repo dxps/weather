@@ -93,7 +93,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Redux" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1151240137" CREATED="1456070821259" MODIFIED="1456080001642" VSHIFT="36">
+<node TEXT="Redux" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1151240137" CREATED="1456070821259" MODIFIED="1456272972237" VSHIFT="36">
 <edge COLOR="#916cbf"/>
 <node TEXT="react-redux" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_511004610" CREATED="1456072290486" MODIFIED="1456072972311" VSHIFT="-12">
 <font NAME="Ubuntu" ITALIC="false"/>
@@ -121,11 +121,15 @@
 </node>
 <node TEXT="Action Creator" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_433678534" CREATED="1456079424143" MODIFIED="1456079480106" VSHIFT="12">
 <node TEXT="is linked to an event" ID="ID_774051631" CREATED="1456079428131" MODIFIED="1456079460779"/>
-<node TEXT="it returns an action (object)&#xa;that is sent to all reducers" ID="ID_26304608" CREATED="1456079461252" MODIFIED="1456174338573">
-<node TEXT="reducers may change the state&#xa;based on these actions" ID="ID_1659201709" CREATED="1456079561366" MODIFIED="1456174346729">
+<node TEXT="it returns an Action (object)&#xa;that is sent to all reducers" ID="ID_26304608" CREATED="1456079461252" MODIFIED="1456272808385">
+<node TEXT="Reducers may change the state&#xa;based on these actions." ID="ID_1659201709" CREATED="1456079561366" MODIFIED="1456272819248">
 <font SIZE="8"/>
 </node>
 </node>
+</node>
+<node TEXT="redux-promise Middleware" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_414099792" CREATED="1456272724291" MODIFIED="1456276441570" VSHIFT="20">
+<node TEXT="get the Action returned by an Action Creater" ID="ID_1165426539" CREATED="1456272732988" MODIFIED="1456272757461"/>
+<node TEXT="it can change the Action and stop passing through" ID="ID_1972046353" CREATED="1456272758349" MODIFIED="1456272964376"/>
 </node>
 </node>
 </node>
